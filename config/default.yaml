@@ -1,0 +1,9 @@
+path:
+  config_path: config/config.yaml
+
+general:
+  use_cuda: Yes
+  seed: 0
+  vertex_max: 100
+  vertex_min: 10
+
