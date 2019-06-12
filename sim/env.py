@@ -8,11 +8,15 @@ class Env:
         self.config = config
         self.vertex_max = config.general.vertex_max
         self.vertex_min = config.general.vertex_min
-        self.edges_proba = np.random.rand()
-        self.vertex = np.random.randint(self.vertex_min, self.vertex_max)+1
         self.seed = config.general.seed
-        self.directed = config.general.seed
-        self.G = nx.gnp_random_graph(self.vertex, self.edges_proba, seed = self.seed, directed=self.directed)
+        self.directed = config.general.directed
+        np.random.seed(self.seed)
+
+    def _get_graph(self):
+        self.vertex = np.random.randint(self.vertex_min, self.vertex_max, ) + 1
+        self.edges_proba = np.random.rand()
+        self.G = nx.gnp_random_graph(self.vertex, self.edges_proba, seed=self.seed, directed=self.directed)
+
 
     def step(self, action):
         pass

@@ -6,4 +6,4 @@ general:
   seed: 0
   vertex_max: 100
   vertex_min: 10
-
+  directed: Yes
