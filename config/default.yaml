@@ -1,5 +1,5 @@
 path:
-  config_path: config/default.yaml
+  config_path: config/config.yaml
   checkpoint: k_coloring_graph_AlphaZeroGo/results/
 
 general:
