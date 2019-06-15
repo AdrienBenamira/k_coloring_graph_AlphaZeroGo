@@ -1,7 +1,7 @@
 import networkx as nx
 import numpy as np
 
-class Board():
+class GraphCoring():
 
     # list of all 8 directions on the board, as (x,y) offsets
     __directions = [(1,1),(1,0),(1,-1),(0,-1),(-1,-1),(-1,0),(-1,1),(0,1)]

@@ -14,12 +14,12 @@ from utils import Bar, AverageMeter
 
 import torch
 import torch.optim as optim
-from model.GraphNNet import Graphnet as gnet
+from model.TestNNet import TestNNet as nnet
 
 
 class NNetWrapper(NeuralNet):
     def __init__(self, game, config):
-        self.nnet = gnet(game, config)
+        self.nnet = nnet(game, config)
         self.board_x, self.board_y = game.getBoardSize()
         self.action_size = game.getActionSize()
         if config.general.use_cuda:

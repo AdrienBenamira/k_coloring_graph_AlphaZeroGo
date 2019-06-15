@@ -1,4 +1,5 @@
 from sim.EnvTest import EnvTest
+from sim.EnvGraph import Env
 from utils.config import Config
 from model.Coach import Coach
 from model.NNet import NNetWrapper as nn

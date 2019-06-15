@@ -2,10 +2,10 @@ import networkx as nx
 import sys
 from sim.Game import Game
 import numpy as np
-from sim.Board import Board
+from sim.GraphCoring import GraphCoring
 
 
-class EnvTest(Game):
+class Env(Game):
     def __init__(self, config):
         self.config = config
         self.vertex_max = config.general.vertex_max
