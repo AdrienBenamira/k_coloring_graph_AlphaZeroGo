@@ -1,9 +1,29 @@
 path:
-  config_path: config/config.yaml
+  config_path: config/default.yaml
+  checkpoint: k_coloring_graph_AlphaZeroGo/results/
 
 general:
   use_cuda: Yes
   seed: 0
   vertex_max: 100
   vertex_min: 10
-  directed: Yes
+  directed: No
+  number_color_init: 3
+  n: 6
+  load_model: No
+
+learning:
+  lr: 0.001
+  dropout: 0.3
+  epochs: 10
+  batch_size: 64
+  num_channels: 512
+  numIters: 1000
+  numEps: 100
+  tempThreshold: 15
+  updateThreshold: 0.6
+  maxlenOfQueue: 200000
+  numMCTSSims: 25
+  arenaCompare: 40
+  numItersForTrainExamplesHistory: 20
+  cpuct: 1

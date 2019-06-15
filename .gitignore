@@ -1,1 +1,5 @@
 config/config.yaml
+.gitignore
+utils/progress
+results/
+.idea/
